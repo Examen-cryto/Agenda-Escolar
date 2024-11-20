@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de Actividades Escolares</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Agenda de Actividades Escolares</h1>
+  </header>
+  <main>
+    <section class="agenda-form">
+      <h2>Agregar Actividad</h2>
+      <form id="activityForm">
+        <label for="activityName">Nombre de la Actividad:</label>
+        <input type="text" id="activityName" placeholder="Ej: Examen de Matemáticas" required>
+
+        <label for="activityDate">Fecha:</label>
+        <input type="date" id="activityDate" required>
+
+        <label for="activityTime">Hora:</label>
+        <input type="time" id="activityTime" required>
+
+        <button type="submit">Agregar Actividad</button>
+      </form>
+    </section>
+    <section class="agenda-list">
+      <h2>Actividades Programadas</h2>
+      <ul id="activityList">
+        <!-- Las actividades se agregarán dinámicamente aquí -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Agenda Escolar</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
